@@ -11,3 +11,78 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
+.header {
+    font-size: 32px;
+    text-align: center;
+    color: rgba(23, 20, 230, 0.897);
+}
+.about-me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .brand-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #4CAF50;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  }
+  
