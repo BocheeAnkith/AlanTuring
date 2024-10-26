@@ -1,62 +1,304 @@
+Cleaned up Alan Turing webpage
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Turing Tribute</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Alan Turing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Alan Turing: A Pioneer of Computer Science and Cryptography</h1>
-        <p>Exploring the life and legacy of a visionary mathematician, cryptographer, and AI pioneer.</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="brand-text">Alan Turing Legacy</span>
+        </div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#legacy">Legacy</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#legacy">Legacy</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="content">
-            <h2>Welcome to Alan Turing’s Legacy</h2>
-            <p>Discover the achievements, innovations, and ongoing influence of one of the greatest minds of the 20th century.</p>
-        </section>
+    <div class="header">
+        <h2 style="color:white;">Alan Turing's Legacy</h2>
+    </div>
 
-        <!-- About Section -->
-        <section id="about" class="content">
-            <h2>About Alan Turing</h2>
-            <img src="https://via.placeholder.com/400x250" alt="Alan Turing Portrait" class="image-fade">
-            <p>Alan Turing, born in 1912, was a British mathematician whose ideas laid the groundwork for modern computing and artificial intelligence. He is known for the Turing machine, which became a model for the concept of computation.</p>
-        </section>
-
-        <!-- Legacy Section -->
-        <section id="legacy" class="content">
-            <h2>Legacy and Recognition</h2>
-            <img src="https://via.placeholder.com/400x250" alt="Statue of Alan Turing" class="image-fade">
-            <p>Turing's legacy lives on in fields from cryptography to AI. He is celebrated as a hero for his role in WWII and his pioneering ideas, and he has inspired numerous awards, monuments, and commemorations worldwide.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="content">
-            <h2>Projects and Innovations</h2>
-            <img src="https://via.placeholder.com/400x250" alt="Enigma Machine" class="image-fade">
-            <p>Turing's work at Bletchley Park was crucial in breaking the Enigma code during WWII, a feat that significantly impacted the outcome of the war. His ideas continue to shape technology and inspire new generations.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Alan Turing Tribute | Contact: info@example.com</p>
-    </footer>
-</body>
-</html>
-
+    <section class="about-section">
+        <h2>About Alan Turing</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="alan.jpg" alt="Alan Turing" class="turing-portrait">
+            </div>
+            <div class="about-content">
+                <p>Alan Turing (1912-1954) was a pioneering British mathematician, computer scientist, logician, and cryptanalyst who laid the foundations of computer science and artificial intelligence. During World War II, his brilliant work at Bletchley Park was instrumental in breaking the German Enigma code, significantly contributing to the Allied victory.</p>
+                <p>As the father of theoretical computer science and artificial intelligence, Turing developed the concept of the Turing machine, which became the foundation for modern computing. His work spans multiple fields, including mathematics, cryptography, and theoretical biology.</p>
+                <p>In 1950, he proposed the famous "Turing Test" for artificial intelligence, which continues to influence discussions about machine intelligence today. Despite facing personal persecution due to his sexuality, Turing's legacy has endured and grown, with his contributions being increasingly recognized and celebrated in recent decades.</p>
+            </div>
+        </div>
+    </section>
+    <section class="education-section">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="edu-logo">
+                    <img src="sherborne.webp" alt="Sherborne School Logo" class="university-logo">
+                </div>
+                <div class="edu-info">
+                    <h3>Sherborne School</h3>
+                    <div class="edu-years">1926 - 1931</div>
+                    <div class="edu-major">Secondary Education</div>
+                    <div class="edu-courses">
+                        <h4>Notable Subjects:</h4>
+                        <ul>
+                            <li>Mathematics</li>
+                            <li>Science</li>
+                            <li>Classical Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="education-card">
+                <div class="edu-logo">
+                    <img src="cambridge.png" alt="King's College, Cambridge Logo" class="university-logo">
+                </div>
+                <div class="edu-info">
+                    <h3>King's College, Cambridge</h3>
+                    <div class="edu-years">1931 - 1934</div>
+                    <div class="edu-major">Bachelor of Arts in Mathematics</div>
+                    <div class="edu-courses">
+                        <h4>Key Coursework:</h4>
+                        <ul>
+                            <li>Mathematical Analysis</li>
+                            <li>Mathematical Logic</li>
+                            <li>Probability Theory</li>
+                            <li>Number Theory</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="education-card">
+                <div class="edu-logo">
+                    <img src="princeton.png" alt="Princeton University Logo" class="university-logo">
+                </div>
+                <div class="edu-info">
+                    <h3>Princeton University</h3>
+                    <div class="edu-years">1936 - 1938</div>
+                    <div class="edu-major">Ph.D. in Mathematical Logic</div>
+                    <div class="edu-courses">
+                        <h4>Research Focus:</h4>
+                        <ul>
+                            <li>Systems of Logic</li>
+                            <li>Ordinal Logic</li>
+                            <li>Cryptology</li>
+                            <li>Computing Machinery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contributions-section">
+        <h2>Major Contributions</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" onclick="moveSlide(-1)">&#10094;</button>
+            
+            <div class="slides-wrapper">
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/api/placeholder/800/400" alt="Turing Machine Concept" class="slide-image"> <!--@BocheeAnkith add a pic-->
+                        <div class="slide-info">
+                            <h3>The Turing Machine (1936)</h3>
+                            <p>A mathematical model of computation that defines an abstract machine, laying the foundation for computer science. The Turing Machine proved that certain mathematical problems are "undecidable" and helped establish the limits of mechanical computation.</p>
+                            <div class="impact">
+                                <h4>Impact:</h4>
+                                <p>Became the theoretical basis for modern computers and computational theory.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/api/placeholder/800/400" alt="Enigma Code Breaking" class="slide-image"> <!--@BocheeAnkith add a pic-->
+                        <div class="slide-info">
+                            <h3>Breaking the Enigma Code (1939-1945)</h3>
+                            <p>Developed the 'Bombe' machine to crack Nazi Germany's Enigma code during World War II. This breakthrough allowed the Allies to decrypt German military communications and gain crucial strategic advantages.</p>
+                            <div class="impact">
+                                <h4>Impact:</h4>
+                                <p>Estimated to have shortened World War II by several years and saved millions of lives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/api/placeholder/800/400" alt="Turing Test Concept" class="slide-image"> <!--@BocheeAnkith add a pic-->
+                        <div class="slide-info">
+                            <h3>The Turing Test (1950)</h3>
+                            <p>Proposed a method for evaluating machine intelligence through natural language conversations. If a human cannot reliably distinguish between responses from a machine and a human, the machine is considered to have passed the test.</p>
+                            <div class="impact">
+                                <h4>Impact:</h4>
+                                <p>Became a foundational concept in artificial intelligence and continues to influence AI development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/api/placeholder/800/400" alt="Morphogenesis Theory" class="slide-image"> <!--@BocheeAnkith add a pic-->
+                        <div class="slide-info">
+                            <h3>Morphogenesis Theory (1952)</h3>
+                            <p>Published 'The Chemical Basis of Morphogenesis', explaining how natural patterns might emerge from initially uniform biological systems through chemical reactions and diffusion.</p>
+                            <div class="impact">
+                                <h4>Impact:</h4>
+                                <p>Pioneered the field of mathematical biology and pattern formation in developmental biology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="slider-arrow next-arrow" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="ww2-achievements">
+        <h2>Code Breaking Achievements: WW2</h2>
+        
+        <div class="classified-document">
+            <div class="classified-stamp">TOP SECRET</div>
+            <div class="document-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">1939</div>
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Bletchley Park Recruitment</h3>
+                                <div class="security-level">Classification: ULTRA</div>
+                            </div>
+                            <div class="achievement-content">
+                                <img src="/api/placeholder/300/200" alt="Bletchley Park" class="achievement-image"> <!--@BocheeAnkith add a pic-->
+                                <p>Joined Britain's codebreaking center as part of the Government Code and Cypher School.</p>
+                                <div class="decrypt-overlay">
+                                    <button class="decrypt-btn">Decrypt Information</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="year">1940</div>
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>The Bombe Machine</h3>
+                                <div class="security-level">Classification: ULTRA</div>
+                            </div>
+                            <div class="achievement-content">
+                                <img src="/api/placeholder/300/200" alt="Bombe Machine" class="achievement-image"> <!--@BocheeAnkith add a pic-->
+                                <p>Developed the electro-mechanical machine that significantly reduced the work required to decode Enigma messages.</p>
+                                <div class="decrypt-overlay">
+                                    <button class="decrypt-btn">Decrypt Information</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="year">1941</div>
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Naval Enigma Breakthrough</h3>
+                                <div class="security-level">Classification: ULTRA</div>
+                            </div>
+                            <div class="achievement-content">
+                                <img src="/api/placeholder/300/200" alt="Naval Enigma" class="achievement-image"> <!--@BocheeAnkith add a pic-->
+                                <p>Cracked the more complex Naval Enigma code, helping to win the Battle of the Atlantic.</p>
+                                <div class="decrypt-overlay">
+                                    <button class="decrypt-btn">Decrypt Information</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="year">1942-1943</div>
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Tunny Machine</h3>
+                                <div class="security-level">Classification: ULTRA</div>
+                            </div>
+                            <div class="achievement-content">
+                                <img src="/api/placeholder/300/200" alt="Tunny Machine" class="achievement-image"> <!--@BocheeAnkith add a pic-->
+                                <p>Developed methods to crack the even more sophisticated Lorenz cipher used by German High Command.</p>
+                                <div class="decrypt-overlay">
+                                    <button class="decrypt-btn">Decrypt Information</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="file-footer">
+                <div class="file-number">FILE NO: BP-1912-1954</div>
+                <div class="declassified-stamp">DECLASSIFIED</div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+    
+        function moveSlide(n) {
+            showSlide(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+    
+        function showSlide(n) {
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            
+            slides.forEach(slide => slide.style.display = "none");
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].classList.add('active');
+        }
+    
+        // Initialize first slide
+        showSlide(slideIndex);
+    
+        // Decrypt button functionality
+        document.querySelectorAll('.decrypt-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.closest('.achievement-content');
+                content.classList.add('decrypted');
+                button.textContent = 'Decrypted';
+                button.disabled = true;
+            });
+        });
+    </script>
+    </html>
